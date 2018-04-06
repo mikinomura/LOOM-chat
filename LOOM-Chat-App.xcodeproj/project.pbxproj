@@ -13,9 +13,14 @@
 		5F06CA812075FCB300AB4046 /* LOOM_Chat_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5F06CA7F2075FCB300AB4046 /* LOOM_Chat_App.xcdatamodeld */; };
 		5F06CA832075FCB300AB4046 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F06CA822075FCB300AB4046 /* Assets.xcassets */; };
 		5F06CA862075FCB300AB4046 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F06CA842075FCB300AB4046 /* LaunchScreen.storyboard */; };
+		5F7D5EEC20778EC500B637BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F7D5EEB20778EC500B637BC /* GoogleService-Info.plist */; };
+		5F7D5EEE20778F5A00B637BC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7D5EED20778F5A00B637BC /* Constants.swift */; };
+		5FF8CF1E2076051A00C9CFB8 /* Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FF8CF1C207604FE00C9CFB8 /* Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F71904A3EED252E0ED8BCDFE /* Pods_LOOM_Chat_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6ECBFF094F93908052B78C3 /* Pods_LOOM_Chat_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5805F2CE3E81A41CE7000E94 /* Pods-LOOM-Chat-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOOM-Chat-App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LOOM-Chat-App/Pods-LOOM-Chat-App.debug.xcconfig"; sourceTree = "<group>"; };
 		5F06CA752075FCB300AB4046 /* LOOM-Chat-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LOOM-Chat-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F06CA782075FCB300AB4046 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F06CA7A2075FCB300AB4046 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,11 @@
 		5F06CA822075FCB300AB4046 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F06CA852075FCB300AB4046 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F06CA872075FCB300AB4046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F7D5EEB20778EC500B637BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5F7D5EED20778F5A00B637BC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5FF8CF1C207604FE00C9CFB8 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		64D6E5B18924E485C6A640D2 /* Pods-LOOM-Chat-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOOM-Chat-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-LOOM-Chat-App/Pods-LOOM-Chat-App.release.xcconfig"; sourceTree = "<group>"; };
+		B6ECBFF094F93908052B78C3 /* Pods_LOOM_Chat_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LOOM_Chat_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F71904A3EED252E0ED8BCDFE /* Pods_LOOM_Chat_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		505D51C5EEC8DEAE92C21BF0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5805F2CE3E81A41CE7000E94 /* Pods-LOOM-Chat-App.debug.xcconfig */,
+				64D6E5B18924E485C6A640D2 /* Pods-LOOM-Chat-App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5F06CA6C2075FCB300AB4046 = {
 			isa = PBXGroup;
 			children = (
+				5FF8CF1C207604FE00C9CFB8 /* Bridging-Header.h */,
 				5F06CA772075FCB300AB4046 /* LOOM-Chat-App */,
 				5F06CA762075FCB300AB4046 /* Products */,
+				505D51C5EEC8DEAE92C21BF0 /* Pods */,
+				E7E84AE97119B25BB3920B00 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,27 +79,76 @@
 		5F06CA772075FCB300AB4046 /* LOOM-Chat-App */ = {
 			isa = PBXGroup;
 			children = (
+				5FBD6BA62075FE7000A47F9D /* Bridge */,
+				5F06CA8E2075FCF500AB4046 /* Controller */,
+				5F06CA8D2075FCE500AB4046 /* Storyboard */,
 				5F06CA782075FCB300AB4046 /* AppDelegate.swift */,
-				5F06CA7A2075FCB300AB4046 /* ViewController.swift */,
-				5F06CA7C2075FCB300AB4046 /* Main.storyboard */,
 				5F06CA822075FCB300AB4046 /* Assets.xcassets */,
-				5F06CA842075FCB300AB4046 /* LaunchScreen.storyboard */,
+				5F7D5EEB20778EC500B637BC /* GoogleService-Info.plist */,
 				5F06CA872075FCB300AB4046 /* Info.plist */,
 				5F06CA7F2075FCB300AB4046 /* LOOM_Chat_App.xcdatamodeld */,
+				5F7D5EED20778F5A00B637BC /* Constants.swift */,
 			);
 			path = "LOOM-Chat-App";
 			sourceTree = "<group>";
 		};
+		5F06CA8D2075FCE500AB4046 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5F06CA7C2075FCB300AB4046 /* Main.storyboard */,
+				5F06CA842075FCB300AB4046 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		5F06CA8E2075FCF500AB4046 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F06CA7A2075FCB300AB4046 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5FBD6BA62075FE7000A47F9D /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+		E7E84AE97119B25BB3920B00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6ECBFF094F93908052B78C3 /* Pods_LOOM_Chat_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5FF8CF162076007500C9CFB8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FF8CF1E2076051A00C9CFB8 /* Bridging-Header.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		5F06CA742075FCB300AB4046 /* LOOM-Chat-App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F06CA8A2075FCB300AB4046 /* Build configuration list for PBXNativeTarget "LOOM-Chat-App" */;
 			buildPhases = (
+				2C5A3D62F3E261878A370EB6 /* [CP] Check Pods Manifest.lock */,
 				5F06CA712075FCB300AB4046 /* Sources */,
 				5F06CA722075FCB300AB4046 /* Frameworks */,
 				5F06CA732075FCB300AB4046 /* Resources */,
+				E4D99F995F8BEB191899A410 /* [CP] Embed Pods Frameworks */,
+				E5C6C8D45032EDCFBFC17469 /* [CP] Copy Pods Resources */,
+				5FF8CF162076007500C9CFB8 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -127,12 +199,77 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F06CA862075FCB300AB4046 /* LaunchScreen.storyboard in Resources */,
+				5F7D5EEC20778EC500B637BC /* GoogleService-Info.plist in Resources */,
 				5F06CA832075FCB300AB4046 /* Assets.xcassets in Resources */,
 				5F06CA7E2075FCB300AB4046 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C5A3D62F3E261878A370EB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LOOM-Chat-App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4D99F995F8BEB191899A410 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LOOM-Chat-App/Pods-LOOM-Chat-App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LOOM-Chat-App/Pods-LOOM-Chat-App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5C6C8D45032EDCFBFC17469 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LOOM-Chat-App/Pods-LOOM-Chat-App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5F06CA712075FCB300AB4046 /* Sources */ = {
@@ -142,6 +279,7 @@
 				5F06CA7B2075FCB300AB4046 /* ViewController.swift in Sources */,
 				5F06CA812075FCB300AB4046 /* LOOM_Chat_App.xcdatamodeld in Sources */,
 				5F06CA792075FCB300AB4046 /* AppDelegate.swift in Sources */,
+				5F7D5EEE20778F5A00B637BC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +414,7 @@
 		};
 		5F06CA8B2075FCB300AB4046 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5805F2CE3E81A41CE7000E94 /* Pods-LOOM-Chat-App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -284,6 +423,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "tokyo.fyi.LOOM-Chat-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -291,6 +431,7 @@
 		};
 		5F06CA8C2075FCB300AB4046 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64D6E5B18924E485C6A640D2 /* Pods-LOOM-Chat-App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +440,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "tokyo.fyi.LOOM-Chat-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
